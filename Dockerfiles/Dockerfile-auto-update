@@ -17,7 +17,7 @@ COPY config.json /app/config.json
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port, for now default is 8080 cause it's the only one really allowed by HuggingFace
-EXPOSE 6666
+EXPOSE 8080
 
 # Run run.py when the container launches
 CMD ["python", "run.py"]
